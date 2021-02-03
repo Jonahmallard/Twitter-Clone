@@ -29,12 +29,13 @@ class PostForm extends React.Component {
     render() {
         return (
             <div>
+                <h1>Create a Post</h1>
                 <form onSubmit={this.handleSubmit}>
                     <label>Enter Username</label>
                     <br/><br/>
-                    <input type="text" name='username' placeholder='Username' value={this.state.username} onChange={this.handleChange}/>
+                    <input required type="text" name='username' placeholder='Username' value={this.state.username} onChange={this.handleChange}/>
                     <br/><br/>
-                    <input type="text" name='content' placeholder='New Content Goes Here!' value={this.state.content} onChange={this.handleChange}/>
+                    <input required type="text" name='content' placeholder='New Content Goes Here!' value={this.state.content} onChange={this.handleChange}/>
                     <br/><br/>
                     <input type="submit" />
                 </form>
