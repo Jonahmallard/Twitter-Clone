@@ -1,5 +1,10 @@
 export default function fetchPosts() {
-    fetch('https://localhost:3000/posts')
-    .then(res => res.json)
-    .then()
+    return (dispatch) => {
+    fetch('http://localhost:3000/posts')
+    .then(res => res.json())
+    .then(posts => dispatch({
+        type: 'FETCH_POSTS',
+        payload: posts
+    }))
+    }
 }
