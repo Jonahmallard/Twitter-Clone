@@ -19,6 +19,11 @@ class PostForm extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault()
         this.props.addPost(this.state)
+        this.setState({
+            username: '',
+            content: '',
+            likes: 0
+        })
     }
 
     render() {
