@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { addComment } from '../actions/addComments';
+import { addComment } from '../actions/addComment';
 
 class CommentForm extends React.Component {
 
@@ -31,7 +31,7 @@ class CommentForm extends React.Component {
     render() {
         return (
             <div>
-                <form>
+                <form onSubmit={this.handleSubmit}>
                     <hr/><hr/><br/>
                     <label>Enter Username to Add a Comment</label>
                     <br/><br/>
