@@ -1,6 +1,8 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
 
+import CommentsContainer from '../containers/CommentsContainer';
+
 const Post = (props) => {
 
     let post = props.posts[props.match.params.id -1]
@@ -12,6 +14,8 @@ const Post = (props) => {
             {post ? <h2>{post.username}</h2> : null}
             {post ? <p>{post.content}</p> : null}
             {post ? <div>Likes: {post.likes}</div> : null}
+            <br/>
+            <CommentsContainer post={post}/>
         </div>
     )
 }
