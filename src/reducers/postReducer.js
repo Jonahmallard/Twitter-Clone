@@ -22,6 +22,16 @@ export default function postReducer(state = { posts: [] }, action) {
             }
         })
             return {...state, posts: post}
+            case 'EDIT_POST':
+                let updatedPost = state.posts.map(post => {
+                    if (post.id === action.payload.id) {
+                    return action.payload 
+                } else {
+                    return post
+                }
+            })
+                return {...state, posts: updatedPost}
+
     default:
         return state;
     }

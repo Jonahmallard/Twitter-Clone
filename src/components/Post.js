@@ -1,5 +1,6 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
+import PostEdit from './PostEdit';
 
 import CommentsContainer from '../containers/CommentsContainer';
 
@@ -16,6 +17,7 @@ const Post = (props) => {
             {post ? <div>Likes: {post.likes}</div> : null}
             <br/>
             <CommentsContainer post={post}/>
+            <PostEdit post={post}/>
         </div>
     )
 }
