@@ -33,7 +33,7 @@ class CommentForm extends React.Component {
             <div>
                 <form onSubmit={this.handleSubmit}>
                     <hr/><hr/><br/>
-                    <label>Enter Username to Add a Comment</label>
+                    <h2>Add a Comment</h2>
                     <br/><br/>
                     <input required type="text" name='username' placeholder='Username' value={this.state.username} onChange={this.handleChange}/>
                     <br/><br/>

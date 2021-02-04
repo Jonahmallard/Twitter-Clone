@@ -15,9 +15,9 @@ const Post = (props) => {
             {post ? <h2>{post.username}</h2> : null}
             {post ? <p>{post.content}</p> : null}
             {post ? <div>Likes: {post.likes}</div> : null}
+            {/* <PostEdit post={post}/> */}
             <br/>
             <CommentsContainer post={post}/>
-            <PostEdit post={post}/>
         </div>
     )
 }

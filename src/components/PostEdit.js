@@ -30,7 +30,7 @@ class PostEdit extends React.Component {
     render() {
         return (
             <div>
-                <h1>Create a Post</h1>
+                <h1>Edit Post</h1>
                 <form onSubmit={this.handleSubmit}>
                     <label>Enter Username</label>
                     <br/><br/>
