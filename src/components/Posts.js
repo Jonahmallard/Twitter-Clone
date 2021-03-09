@@ -4,13 +4,14 @@ import { Link } from 'react-router-dom';
 const Posts = (props) => {
     return (
         <div>
-            <h1>Tweetys</h1>
+            <h1>Tweeties</h1>
             {props.posts.map(post => 
-            <div key={post.id} class="card" style={{width: '18rem', justifyContent: 'center'}}>
+            <div key={post.id} class="card">
                 <div class="card-body">
-                    <Link to={`/${post.id}`}><h2 class="card-title">{post.username}</h2></Link>
-                    {<p>{post.content}</p>}
-                    {<div>Likes: {post.likes}</div>}
+                    <h2 class="card-title">{post.username}</h2>
+                    {<p class="card-text">{post.content}</p>}
+                    {<p>Likes: {post.likes}</p>}
+                    <Link to={`/${post.id}`} class="btn btn-primary">Add a Comment</Link>
                 </div>
             </div>)}
         </div>

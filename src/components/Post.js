@@ -12,10 +12,10 @@ const Post = (props) => {
         <div>
             {post ? null : <Redirect to='/'/>}
             {post ? <h1>Post #{post.id}</h1> : null}
-            {post ? <h2>{post.username}</h2> : null}
-            {post ? <p>{post.content}</p> : null}
+            {post ? <h2 class="card-title">{post.username}</h2> : null}
+            {post ? <p class="card-text">{post.content}</p> : null}
             {post ? <div>Likes: {post.likes}</div> : null}
-            <PostEdit post={post}/>
+            {/* <PostEdit post={post}/> */}
             <br/>
             <CommentsContainer post={post}/>
         </div>
