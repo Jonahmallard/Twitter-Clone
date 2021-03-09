@@ -20,9 +20,9 @@ const Post = (props) => {
                         <h3 className="card-title">User: <strong>{post.username}</strong></h3>
                         <p className="card-text"><strong>Posted: </strong>{post.content}</p>
                         <p>{post.likes} likes</p> 
+                        <PostEdit post={post}/>
                     </div>
                 </div> : null}
-            <PostEdit post={post}/>
             <CommentsContainer post={post}/>
         </div>
     )

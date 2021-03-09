@@ -32,12 +32,8 @@ class PostEdit extends React.Component {
             <div>
                 <h1>Edit Post</h1>
                 <form onSubmit={this.handleSubmit}>
-                    <label>Enter Username</label>
-                    <br/><br/>
-                    <input required type="text" name='username' placeholder='Username' value={this.state.username} onChange={this.handleChange}/>
-                    <br/><br/>
-                    <input required type="text" name='content' placeholder='New Content Goes Here!' value={this.state.content} onChange={this.handleChange}/>
-                    <br/><br/>
+                    <input required type="text" name='username' placeholder='Enter Username' value={this.state.username} onChange={this.handleChange}/><br/>
+                    <input required type="text" name='content' placeholder='New Content Goes Here!' value={this.state.content} onChange={this.handleChange}/><br/>
                     <input type="submit" />
                 </form>
             </div>
