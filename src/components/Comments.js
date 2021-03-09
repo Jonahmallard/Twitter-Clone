@@ -15,7 +15,6 @@ const Comments = (props) => {
                     <h3>User: <strong>{comment.username}</strong></h3>
                     <p>{comment.content}</p>
                     <p>{comment.likes}&nbsp;{comment.kind}(s)</p>
-                    <br/>
                     <button onClick={() => handleDelete(comment)}>Delete</button>
                     <br/><br/>
                 </div>    
