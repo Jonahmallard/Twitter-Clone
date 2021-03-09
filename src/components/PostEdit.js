@@ -30,11 +30,14 @@ class PostEdit extends React.Component {
     render() {
         return (
             <div>
-                <h1>Edit Post</h1>
+                <hr/>
+                <h3>Edit Post</h3>
                 <form onSubmit={this.handleSubmit}>
-                    <input required type="text" name='username' placeholder='Enter Username' value={this.state.username} onChange={this.handleChange}/><br/>
-                    <input required type="text" name='content' placeholder='New Content Goes Here!' value={this.state.content} onChange={this.handleChange}/><br/>
-                    <input type="submit" />
+                    <input required type="text" name='username' placeholder='Enter Username' value={this.state.username} onChange={this.handleChange}/>
+                    <br/>
+                    <input required type="text" name='content' style={{marginTop:'10px'}} placeholder='New Content Goes Here!' value={this.state.content} onChange={this.handleChange}/>
+                    <br/>
+                    <input type="submit" style={{marginTop:'10px'}}/>
                 </form>
             </div>
         )
