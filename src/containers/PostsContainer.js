@@ -8,16 +8,14 @@ import fetchPosts from '../actions/fetchPosts';
 import NavBar from '../components/NavBar';
 
 class PostsContainer extends React.Component {
-
     componentDidMount() {
         this.props.fetchPosts()
     }
 
-
     render() {
         return (
             <div>
-                <NavBar />
+                <div><NavBar /></div>
                 <Switch>  
                     <Route path='/new' component={PostForm}/>
                     <Route path='/:id' render={(routerProps) => <Post {...routerProps} posts={this.props.posts}/> } />

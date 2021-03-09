@@ -5,7 +5,7 @@ import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import postReducer from './reducers/postReducer';
 import { BrowserRouter } from 'react-router-dom';
-import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 
 const enhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
