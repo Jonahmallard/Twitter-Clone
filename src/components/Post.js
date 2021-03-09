@@ -22,7 +22,7 @@ const Post = (props) => {
                         <p>{post.likes} likes</p> 
                     </div>
                 </div> : null}
-            {/* <PostEdit post={post}/> */}
+            <PostEdit post={post}/>
             <CommentsContainer post={post}/>
         </div>
     )
