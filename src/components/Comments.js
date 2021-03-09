@@ -12,14 +12,14 @@ const Comments = (props) => {
         <div>
             {props.comments && props.comments.map(comment => 
                 <div key={comment.id}>
-                    <h2>{comment.username}</h2>
+                    <h3>User: <strong>{comment.username}</strong></h3>
                     <p>{comment.content}</p>
                     {comment.kind}
                     &nbsp;
                     {comment.likes}
                     <br/><br/>
                     <button onClick={() => handleDelete(comment)}>Delete</button>
-                    <br/><br/><br/>
+                    <br/><br/>
                 </div>    
             )}
         </div>

@@ -11,12 +11,18 @@ const Post = (props) => {
     return (
         <div>
             {post ? null : <Redirect to='/'/>}
-            {post ? <h1>Post #{post.id}</h1> : null}
-            {post ? <h2 class="card-title">{post.username}</h2> : null}
-            {post ? <p class="card-text">{post.content}</p> : null}
-            {post ? <div>Likes: {post.likes}</div> : null}
-            {/* <PostEdit post={post}/> */}
             <br/>
+            {post ? <h1>Post #{post.id}</h1> : null}
+            <br/>
+            {post ? 
+                <div className="card">
+                    <div className="card-body">
+                        <h3 className="card-title">User: <strong>{post.username}</strong></h3>
+                        <p className="card-text"><strong>Posted: </strong>{post.content}</p>
+                        <p>{post.likes} likes</p> 
+                    </div>
+                </div> : null}
+            {/* <PostEdit post={post}/> */}
             <CommentsContainer post={post}/>
         </div>
     )

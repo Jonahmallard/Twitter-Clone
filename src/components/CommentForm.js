@@ -32,9 +32,9 @@ class CommentForm extends React.Component {
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
-                    <hr/><hr/><br/>
+                    <br/>
                     <h2>Add a Comment</h2>
-                    <br/><br/>
+                    <br/>
                     <input required type="text" name='username' placeholder='Username' value={this.state.username} onChange={this.handleChange}/>
                     <br/><br/>
                     <input required type="text" name='content' placeholder='New Content Goes Here!' value={this.state.content} onChange={this.handleChange}/>
@@ -61,7 +61,7 @@ class CommentForm extends React.Component {
                     <br/><br/>
                     <input type="submit"/>
                     <br/><br/>
-                    <hr/><hr/>
+                    <hr/>
                 </form>
             </div>
         )
