@@ -24,6 +24,7 @@ class PostForm extends React.Component {
             content: '',
             likes: 0
         })
+        this.props.history.push("/");
     }
 
     render() {
