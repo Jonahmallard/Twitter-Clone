@@ -1,10 +1,17 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const Posts = (props) => {
+    // const [sortedPosts, setSortedPosts] = useState(false);
+    // const sortPosts = props.posts.sort((a, b) => a.likes - b.likes);
+    // const unSortPosts = props.posts.sort((a, b) => b.likes - a.likes);
+    // console.log(sortPosts);
+    // console.log(props.posts);
     return (
         <div>
             <br/>
             <h1>Tweeties</h1>
+            {/* <button onClick={sortedPosts ? setSortedPosts : sortPosts}>Sort</button> */}
             <br/>
             {props.posts.map(post => 
             <div key={post.id} className="card">
