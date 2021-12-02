@@ -39,7 +39,7 @@ class CommentForm extends React.Component {
                     <br/><br/>
                     <input required type="text" name='content' placeholder='New Content Goes Here!' value={this.state.content} onChange={this.handleChange}/>
                     <br/><br/>
-                    <label>Like or Dislike?</label>
+                    <label>Add Likes or Dislikes?</label>
                     &nbsp;&nbsp;
                     <select name="kind" value={this.state.kind} onChange={this.handleChange}>
                         <option>Like</option>
