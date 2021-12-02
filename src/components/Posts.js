@@ -4,7 +4,7 @@ const Posts = (props) => {
     return (
         <div>
             <br/>
-            <h1>Tweeties</h1>
+            <h1>Tweets App</h1>
             <br/>
             {props.posts.map(post => 
             <div key={post.id} className="card">
