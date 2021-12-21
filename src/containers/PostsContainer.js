@@ -6,6 +6,7 @@ import Posts from '../components/Posts';
 import PostForm from '../components/PostForm';
 import fetchPosts from '../actions/fetchPosts';
 import NavBar from '../components/NavBar';
+import Livecoding from '../components/livecoding';
 
 class PostsContainer extends React.Component {
     componentDidMount() {
@@ -21,6 +22,7 @@ class PostsContainer extends React.Component {
                     <Route path='/:id' render={(routerProps) => <Post {...routerProps} posts={this.props.posts}/> } />
                     <Route path='/' render={(routerProps) => <Posts {...routerProps} posts={this.props.posts}/> } />
                 </Switch>
+                <Livecoding />
             </div>
         )
     }

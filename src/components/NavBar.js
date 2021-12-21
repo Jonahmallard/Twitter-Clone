@@ -1,14 +1,14 @@
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 import '../App.css';
 
 
 export default function NavBar() {
   return (
     <nav>
-      <br/>
+      {/* <br/>
       <NavLink style={{textDecoration: 'none'}} exact to='/'>View all Posts</NavLink>
       &nbsp; | &nbsp;
-      <NavLink style={{textDecoration: 'none'}} exact to='/new'>Create a New Post</NavLink>
+      <NavLink style={{textDecoration: 'none'}} exact to='/new'>Create a New Post</NavLink> */}
     </nav>
   );
 }
