@@ -1,0 +1,16 @@
+# Render Blueprint for the Twitter-Clone frontend demo (free static site).
+# REACT_APP_API_URL is inlined into the build at build time, so it must point
+# at the live backend URL: https://tweets-app-backend.onrender.com
+# (the Tweets-App-Backend service name determines that URL).
+services:
+  - type: static
+    name: twitter-clone
+    env: static
+    plan: free
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./build
+    envVars:
+      - key: NODE_VERSION
+        value: 16.20.2
+      - key: REACT_APP_API_URL
+        value: https://tweets-app-backend.onrender.com

@@ -1,6 +1,8 @@
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:3000';
+
 export const editPost = (post) => {
     return (dispatch) => {
-        fetch(`http://localhost:3000/posts/${post.id}`, {
+        fetch(`${API_URL}/posts/${post.id}`, {
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'

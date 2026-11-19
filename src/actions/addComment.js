@@ -1,6 +1,8 @@
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:3000';
+
 export const addComment = (comment, postId) => {
     return (dispatch) => {
-        fetch(`http://localhost:3000/posts/${postId}/comments`, {
+        fetch(`${API_URL}/posts/${postId}/comments`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -1,6 +1,8 @@
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:3000';
+
 export const deleteComment = (commentId, accountId) => {
     return (dispatch) => {
-        return fetch(`http://localhost:3000/posts/${accountId}/comments/${commentId}`, {
+        return fetch(`${API_URL}/posts/${accountId}/comments/${commentId}`, {
             method: 'DELETE'
         }) 
         .then(res => res.json())
