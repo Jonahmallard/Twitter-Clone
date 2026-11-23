@@ -5,3 +5,7 @@ to your local code editor by typing Npm Install in the command prompt
 
 After all the dependencies have been loaded you will be able to start
 the server by then typing NPM Start in the command prompt
+
+## Screenshots
+
+![Twitter Clone](screenshots/twitter-clone.png)
